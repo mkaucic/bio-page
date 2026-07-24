@@ -94,6 +94,82 @@ button[type="submit"]:hover {
   background: #1d4ed8;
 }
 
+:root {
+  --color-primary: hsl(221, 83%, 53%);
+  --color-secondary: hsl(162, 63%, 41%);
+  --color-neutral-900: hsl(220, 13%, 13%);
+  --color-neutral-500: hsl(220, 9%, 46%);
+  --color-neutral-100: hsl(220, 14%, 96%);
+  --font-heading: "Inter", -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+.swatches {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  width: 140px;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.swatch span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+.swatch--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.swatch--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.swatch--dark {
+  background: var(--color-neutral-900);
+  color: white;
+}
+.swatch--light {
+  background: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+}
+
+.type-h1 {
+  font-size: 2.5rem;
+  margin: 12px 0;
+}
+.type-h2 {
+  font-size: 2rem;
+  margin: 12px 0;
+}
+.type-h3 {
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+.type-body {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+.type-small {
+  font-size: 0.875rem;
+  color: var(--color-neutral-500);
+  margin: 12px 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
