@@ -31,7 +31,10 @@ img {
 /* ID selector */
 #main-nav {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 16px;
   margin-top: 16px;
   padding-top: 16px;
   border-top: 1px solid #e5e5e5;
