@@ -11,11 +11,11 @@ body {
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 20px 16px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-bottom: 8px;
 }
 
@@ -31,7 +31,7 @@ img {
 /* ID selector */
 #main-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px 16px;
@@ -195,4 +195,48 @@ h3 {
   object-fit: cover;
   border-radius: 8px;
   display: block;
+}
+
+.header-top {
+  text-align: center;
+}
+
+header img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+  body {
+    padding: 32px 24px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+
+  header img {
+    width: 160px;
+    height: 160px;
+  }
+
+  #main-nav {
+    justify-content: space-between;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    max-width: 900px;
+  }
 }
