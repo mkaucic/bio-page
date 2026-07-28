@@ -294,3 +294,29 @@ button[type="submit"]:hover {
     max-width: 900px;
   }
 }
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fade-in-up 0.5s ease-out;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+.footer-links a {
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
+}
