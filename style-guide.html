@@ -15,43 +15,51 @@
   <body>
     <header>
       <h1>Style guide</h1>
-      <nav id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="stats.html">Stats</a>
-        <a href="style-guide.html">Style Guide</a>
-        <a href="gallery.html">Gallery</a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__link" href="stats.html">Stats</a>
+        <a class="nav__link" href="style-guide.html">Style Guide</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
       </nav>
     </header>
 
     <main>
       <section class="card">
         <h2>Color palette</h2>
-        <div class="swatches">
-          <div class="swatch swatch--primary">
-            Primary<span>hsl(221, 83%, 53%)</span>
+        <div class="palette">
+          <div class="palette__swatch palette__swatch--primary">
+            Primary<span class="palette__value">hsl(221, 83%, 53%)</span>
           </div>
-          <div class="swatch swatch--secondary">
-            Secondary<span>hsl(162, 63%, 41%)</span>
+          <div class="palette__swatch palette__swatch--secondary">
+            Secondary<span class="palette__value">hsl(162, 63%, 41%)</span>
           </div>
-          <div class="swatch swatch--dark">
-            Neutral 900<span>hsl(220, 13%, 13%)</span>
+          <div class="palette__swatch palette__swatch--dark">
+            Neutral 900<span class="palette__value">hsl(220, 13%, 13%)</span>
           </div>
-          <div class="swatch swatch--light">
-            Neutral 100<span>hsl(220, 14%, 96%)</span>
+          <div class="palette__swatch palette__swatch--light">
+            Neutral 100<span class="palette__value">hsl(220, 14%, 96%)</span>
           </div>
         </div>
       </section>
 
       <section class="card">
         <h2>Type scale</h2>
-        <p class="type-h1">Heading 1 — 2.5rem</p>
-        <p class="type-h2">Heading 2 — 2rem</p>
-        <p class="type-h3">Heading 3 — 1.5rem</p>
-        <p class="type-body">
+        <p class="type-scale__sample type-scale__sample--h1">
+          Heading 1 — 2.5rem
+        </p>
+        <p class="type-scale__sample type-scale__sample--h2">
+          Heading 2 — 2rem
+        </p>
+        <p class="type-scale__sample type-scale__sample--h3">
+          Heading 3 — 1.5rem
+        </p>
+        <p class="type-scale__sample type-scale__sample--body">
           Body text — 1rem, this is what most reading text should use
         </p>
-        <p class="type-small">Small / caption — 0.875rem</p>
+        <p class="type-scale__sample type-scale__sample--small">
+          Small / caption — 0.875rem
+        </p>
       </section>
     </main>
 
